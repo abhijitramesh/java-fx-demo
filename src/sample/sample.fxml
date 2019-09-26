@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1016.0" stylesheets="@../red_theam.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="428.0" prefWidth="1016.0">
+         <opaqueInsets>
+            <Insets bottom="10.0" left="19.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <VBox cacheShape="false" prefHeight="374.0" prefWidth="227.0" spacing="10.0">
+               <children>
+                  <Label text="CheckBox Objects">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="pepperoniCheckBox" mnemonicParsing="false" text="Pepperoni" />
+                  <CheckBox fx:id="pineappleCheckBox" mnemonicParsing="false" text="Pineapple" />
+                  <CheckBox fx:id="baconCheckBox" mnemonicParsing="false" text="Bacon" />
+                  <Button mnemonicParsing="false" onAction="#pizzaOrderButtonPushed" text="Order Pizza" />
+                  <Label fx:id="pizzaOrderLabel" alignment="TOP_LEFT" prefHeight="155.0" prefWidth="224.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="374.0" prefWidth="227.0" spacing="10.0">
+               <children>
+                  <Label text="Choice Box Objexcts">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#favrioutbuttonpushed" text="Favourit Fruit" />
+                  <Label fx:id="choiceBoxLabel" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="374.0" prefWidth="227.0" spacing="10.0">
+               <children>
+                  <Label text="Combo Box Objects">
+                  <font>
+                     <Font name="System Bold Italic" size="19.0" />
+                  </font>
+                  </Label>
+                  <ComboBox fx:id="comboBox" onAction="#ComboBoxUpdated" prefWidth="150.0" />
+                  <Label fx:id="comboboxLabel" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="374.0" prefWidth="227.0" spacing="10.0">
+               <children>
+                  <Label text="Radio Button Objects">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="cpp" mnemonicParsing="false" onAction="#onButtonSelected" text="C++" />
+                  <RadioButton fx:id="java" mnemonicParsing="false" onAction="#onButtonSelected" text="Java" />
+                  <RadioButton fx:id="Python" mnemonicParsing="false" onAction="#onButtonSelected" text="Pyton" />
+                  <RadioButton fx:id="Ruby" mnemonicParsing="false" onAction="#onButtonSelected" text="Ruby" />
+                  <Label fx:id="RadioButtonLable" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutY="445.0" prefHeight="305.0" prefWidth="1016.0">
+         <children>
+            <VBox prefHeight="305.0" prefWidth="222.0">
+               <children>
+                  <Label text="List View" />
+                  <ListView fx:id="listView" prefHeight="305.0" prefWidth="247.0" />
+               </children>
+            </VBox>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onListViewButtonPushed" text="Button" />
+               </children>
+            </StackPane>
+            <VBox prefHeight="305.0" prefWidth="244.0">
+               <children>
+                  <Label text="Text Area" />
+                  <TextArea fx:id="textArea" prefHeight="201.0" prefWidth="115.0" />
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="305.0" prefWidth="349.0">
+               <children>
+                  <Button layoutX="152.0" layoutY="140.0" mnemonicParsing="false" onAction="#onTableButtonPushed" text="Button" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
