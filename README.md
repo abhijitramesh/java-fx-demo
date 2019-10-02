@@ -23,4 +23,9 @@ $ git clone https://github.com/abhijitramesh/java-fx-demo.git
 
 * [Setup](https://openjfx.io/openjfx-docs/) JavaFX with IntelliJ
 
+* [Setup](https://blog.templatetoaster.com/xampp-phpmyadmin/) Database with mysql preferable to use xaamp
+  * Go to phpadmin
+  * Make a database named Database
+  * put three fields firstname [datatype text] , lastname [datatype text] and finally birthday [database date] 
+
 If everything is setup well,you should be able to import the project into IntelliJ and run it immediately.
